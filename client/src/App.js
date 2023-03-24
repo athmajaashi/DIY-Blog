@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Home from './components/Home';
+import Blogs from './components/Blogs';
 import NavBar from './components/NavBar';
 import NewBlog from './components/NewBlog';
 import UpdateBlog from './components/UpdateBlog';
@@ -15,7 +15,7 @@ function App() {
       </div>
       <div className="content">
         <Routes>
-          <Route exact path='/' element={<Home/>}/>
+          <Route exact path='/' element={<Blogs/>}/>
           <Route exact path='/new' element={<NewBlog/>}/>
           <Route exact path='/blogs/:id' element={<ExpandedBlog/>}/>
           <Route exact path='/update/:id' element={<UpdateBlog/>}/>
