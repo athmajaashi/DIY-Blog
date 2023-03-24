@@ -56,11 +56,11 @@ const Blogs = () => {
                             alt={blog.title}
                         />}
                         <CardContent>
-                            <Typography gutterBottom variant="h5" component="div">
+                            <Typography gutterBottom variant="h5" component="div" sx={{height:'8vw'}}>
                                 {blog.title}
                             </Typography>
                             <Typography gutterBottom variant="h5" component="div" sx={{fontSize:'1rem'}}>
-                                {blog.author}
+                                A Blog By: {blog.author}
                             </Typography>
                         </CardContent>
                 </CardActionArea>
